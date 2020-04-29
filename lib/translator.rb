@@ -9,7 +9,7 @@ def load_library(file)
 end
 load_library('./lib/emoticons.yml')
 
-def get_japanese_emoticon
+def get_japanese_emoticon(file, j_emot)
   
 end
 
