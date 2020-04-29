@@ -25,3 +25,4 @@ def get_english_meaning(file, j_emot)
   }
   binding.pry
 end
+get_english_meaning('./lib/emoticons.yml', )
