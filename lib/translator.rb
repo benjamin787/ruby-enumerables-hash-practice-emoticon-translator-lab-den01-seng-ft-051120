@@ -3,7 +3,7 @@ require 'pry'
 
 def load_library
   hash = YAML.load_file('emoticons.yml')
-  emoticons = hash.map { |
+  emoticons = hash.transform_keys { |
 end
 
 def get_japanese_emoticon
