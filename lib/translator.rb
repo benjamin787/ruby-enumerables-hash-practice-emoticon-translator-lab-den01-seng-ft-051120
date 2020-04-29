@@ -1,13 +1,13 @@
 require 'yaml'
 require 'pry' 
 
-def load_library
-  hash = YAML.load_file('emoticons.yml')
+def load_library(file)
+  hash = YAML.load_file(file)
   emoticons = hash.transform_keys { |x| 
     x = { :english => x[0], :japanese => x[1] }
     }
 end
-load_library
+load_library(emoticons.yml)
 binding.pry 
 
 def get_japanese_emoticon
