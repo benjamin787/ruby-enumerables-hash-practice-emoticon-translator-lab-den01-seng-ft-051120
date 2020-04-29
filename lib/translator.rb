@@ -9,7 +9,8 @@ def load_library(file)
 end
 
 def get_japanese_emoticon(file, e_emot)
-  emotion = load_library(file).select { |(name, hash)|
+  emoticons = load_library(file)
+  emotion = emoticons.select { |(name, hash)|
     hash[:english] == e_emot
   }
   emotion[:japanese]
