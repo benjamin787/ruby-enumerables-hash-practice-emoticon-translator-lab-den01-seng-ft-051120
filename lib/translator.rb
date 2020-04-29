@@ -7,14 +7,15 @@ def load_library(file)
     x = { :english => x[0], :japanese => x[1] }
     }
 end
-load_library('./lib/emoticons.yml')
 
 def get_japanese_emoticon(file, e_emot)
   emotion = load_library(file).select { |(name, hash)|
     hash[:english] == e_emot
   }
   emotion[:japanese]
+  binding.pry
 end
+get_japanese_emoticon('/lib/emoticons.yml', "")
 
 def get_english_meaning
   # code goes here
