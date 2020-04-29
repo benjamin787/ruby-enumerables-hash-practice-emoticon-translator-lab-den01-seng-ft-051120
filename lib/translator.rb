@@ -10,6 +10,8 @@ end
 load_library('./lib/emoticons.yml')
 
 def get_japanese_emoticon(file, j_emot)
+  load_library(file).select { |(name, hash)|
+    
   
 end
 
