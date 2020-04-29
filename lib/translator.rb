@@ -7,6 +7,8 @@ def load_library
     x = { :english => x[0], :japanese => x[1]
     }
 end
+load_library
+binding.pry 
 
 def get_japanese_emoticon
   # code goes here
