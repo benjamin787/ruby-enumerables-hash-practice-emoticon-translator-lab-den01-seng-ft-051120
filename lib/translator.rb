@@ -15,7 +15,7 @@ def get_japanese_emoticon(file, e_emot)
     emoticons[name][:english] == e_emot
   }
   if emotion.empty?
-    return "Sorry, that is not a known emoticon."
+    return "Sorry, that emoticon was not found."
   else
     return emotion.values[0][:japanese]
   end 
@@ -27,7 +27,11 @@ def get_english_meaning(file, j_emot)
   emotion = emoticons.select { |(name, hash)|
     emoticons[name][:japanese] == j_emot
   }
-  emotion.to_a[0][0]
+  if emotion.empty?
+    return "Sorry, that emoticon was not found."
+  else 
+    emotion.to_a[0][0]
+  end 
 end
 
 
