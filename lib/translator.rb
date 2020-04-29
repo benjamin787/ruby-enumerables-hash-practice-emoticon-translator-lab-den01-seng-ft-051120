@@ -1,6 +1,5 @@
 require 'yaml'
 require 'pry' 
-require 'lib'
 
 def load_library(file)
   hash = YAML::load(file)
