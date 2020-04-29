@@ -24,6 +24,7 @@ def get_english_meaning(file, j_emot)
     emoticons[name][:japanese] == j_emot
   }
   binding.pry
+  emotion.to_a[0]
 end
 get_english_meaning('./lib/emoticons.yml', "(゜.゜)")
 
