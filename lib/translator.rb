@@ -6,12 +6,11 @@ def load_library(file)
   emoticons = hash.transform_values { |x| 
     x = { :english => x[0], :japanese => x[1] }
     }
-    binding.pry 
 end
 load_library('./lib/emoticons.yml')
 
 def get_japanese_emoticon
-  # code goes here
+  
 end
 
 def get_english_meaning
