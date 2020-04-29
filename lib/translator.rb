@@ -14,7 +14,7 @@ def get_japanese_emoticon(file, e_emot)
     
     emoticons[name][:english] == e_emot
   }
-  emotion.values[1]
+  emotion.values[0][:japanese]
   binding.pry
 end
 get_japanese_emoticon('./lib/emoticons.yml', "O:)")
