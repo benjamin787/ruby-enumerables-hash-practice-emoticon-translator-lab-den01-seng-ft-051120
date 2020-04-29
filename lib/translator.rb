@@ -9,10 +9,11 @@ def load_library(file)
 end
 load_library('./lib/emoticons.yml')
 
-def get_japanese_emoticon(file, j_emot)
-  load_library(file).select { |(name, hash)|
-    
-  
+def get_japanese_emoticon(file, e_emot)
+  emotion = load_library(file).select { |(name, hash)|
+    hash[:english] == e_emot
+  }
+  emotion[:japanese]
 end
 
 def get_english_meaning
