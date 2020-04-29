@@ -14,7 +14,10 @@ def get_japanese_emoticon(file, e_emot)
     
     emoticons[name][:english] == e_emot
   }
-  emotion.values[0][:japanese]
+  if emotion.empty?
+    return "Sorry, that is not a known emoticon."
+  else
+    return emotion.values[0][:japanese]
 end
 
 
