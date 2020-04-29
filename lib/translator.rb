@@ -4,7 +4,7 @@ require 'pry'
 def load_library
   hash = YAML.load_file('emoticons.yml')
   emoticons = hash.transform_keys { |x| 
-    x = { :english => x[0], :japanese => x[1]
+    x = { :english => x[0], :japanese => x[1] }
     }
 end
 load_library
