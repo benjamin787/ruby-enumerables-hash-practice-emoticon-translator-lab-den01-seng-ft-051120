@@ -15,7 +15,7 @@ def get_japanese_emoticon(file, e_emot)
   emotion[:japanese]
   binding.pry
 end
-get_japanese_emoticon('/lib/emoticons.yml', "")
+get_japanese_emoticon('/lib/emoticons.yml', "O:)")
 
 def get_english_meaning
   # code goes here
