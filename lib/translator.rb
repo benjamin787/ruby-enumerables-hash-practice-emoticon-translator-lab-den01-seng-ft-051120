@@ -18,6 +18,7 @@ def get_japanese_emoticon(file, e_emot)
     return "Sorry, that is not a known emoticon."
   else
     return emotion.values[0][:japanese]
+  end 
 end
 
 
