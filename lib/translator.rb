@@ -3,11 +3,10 @@ require 'pry'
 
 def load_library(file)
   hash = YAML.load_file(file)
-  binding.pry
   emoticons = hash.transform_keys { |x| 
     x = { :english => x[0], :japanese => x[1] }
     }
-    #binding.pry 
+    binding.pry 
 end
 load_library('./lib/emoticons.yml')
 
