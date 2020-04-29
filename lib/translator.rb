@@ -12,7 +12,7 @@ def get_japanese_emoticon(file, e_emot)
   emoticons = load_library(file)
   emotion = emoticons.select { |(name, hash)|
     binding.pry
-    hash[:english] == e_emot
+    emoticons[name][:english] == e_emot
   }
   emotion[:japanese]
   binding.pry
