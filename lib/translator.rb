@@ -16,16 +16,15 @@ def get_japanese_emoticon(file, e_emot)
   }
   emotion.values[0][:japanese]
 end
-get_japanese_emoticon('./lib/emoticons.yml', "O:)")
+
 
 def get_english_meaning(file, j_emot)
   emoticons = load_library(file)
   emotion = emoticons.select { |(name, hash)|
     emoticons[name][:japanese] == j_emot
   }
-  binding.pry
-  emotion.to_a[0]
+  emotion.to_a[0][0]
 end
-get_english_meaning('./lib/emoticons.yml', "(゜.゜)")
+
 
 
